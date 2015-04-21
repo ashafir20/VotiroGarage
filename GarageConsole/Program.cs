@@ -20,16 +20,17 @@ namespace GarageConsole
 
             //using a garage builder (for a more manual control over the operations)
             //-----------------------------
-            var builder = new GarageOperationBuilder(car1);
+            var builder = garage.GetCarOperationsBuilder(car1);
             builder.AddCarOperation(new PaintCarOperation(Color.Blue))
                 .AddCarOperation(new LowerCaseCarNameOperation());
 
             builder.SetCar(car2);
             builder.AddCarOperation(new PaintCarOperation(Color.Yellow));
 
-            builder.SetCar(car2);
+            builder.SetCar(car3);
             builder.AddCarOperation(new LowerCaseCarNameOperation())
-                .AddCarOperation(new PaintCarOperation(Color.Blue));
+                .AddCarOperation(new PaintCarOperation(Color.Blue))
+                .AddCarOperation(new FuelCarOperation(10));
 
             builder.Execute();
 

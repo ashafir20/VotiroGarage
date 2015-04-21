@@ -12,48 +12,53 @@ namespace GarageDomain
 
         public void InitGarage()
         {
-/*          _carOperations = new Collection<CarOperationBase>
+          _carOperations = new Collection<CarOperationBase>
             {
                 { new PaintCarOperation() },
                 { new LowerCaseCarNameOperation() }
-            };*/
+            };
         }
 
 /*      public void Excecute(CarOperationBase operationBase)
         {
             operationBase.RunOperation();
         }*/
-    }
 
-    public class GarageOperationBuilder
-    {
-        private Car _car;
-        private readonly ICollection<CarOperationBase> _operations;
-
-        public GarageOperationBuilder(Car car)
+        public GarageOperationBuilder GetCarOperationsBuilder(Car car)
         {
-            _car = car;
-            _operations = new List<CarOperationBase>();
+            return new GarageOperationBuilder(car);
         }
 
-        public GarageOperationBuilder AddCarOperation(CarOperationBase operation)
+        public class GarageOperationBuilder
         {
-            operation.Car = _car; 
-            _operations.Add(new ConsoleLoggerOperationProxy(operation));
-            return this;
-        }
+            private Car _car;
+            private readonly ICollection<CarOperationBase> _operations;
 
-        public void Execute()
-        {
-            foreach (var operation in _operations)
+            internal GarageOperationBuilder(Car car)
             {
-                operation.RunOperation();
+                _car = car;
+                _operations = new List<CarOperationBase>();
             }
-        }
 
-        public void SetCar(Car car)
-        {
-            _car = car;
+            public GarageOperationBuilder AddCarOperation(CarOperationBase operation)
+            {
+                operation.Car = _car;
+                _operations.Add(new ConsoleLoggerOperationProxy(operation));
+                return this;
+            }
+
+            public void Execute()
+            {
+                foreach (var operation in _operations)
+                {
+                    operation.RunOperation();
+                }
+            }
+
+            public void SetCar(Car car)
+            {
+                _car = car;
+            }
         }
     }
 }
