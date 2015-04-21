@@ -12,17 +12,8 @@ namespace GarageDomain
 
         public void InitGarage()
         {
-          _carOperations = new Collection<CarOperationBase>
-            {
-                { new PaintCarOperation() },
-                { new LowerCaseCarNameOperation() }
-            };
+            _carOperations = new Collection<CarOperationBase>();
         }
-
-/*      public void Excecute(CarOperationBase operationBase)
-        {
-            operationBase.RunOperation();
-        }*/
 
         public GarageOperationBuilder GetCarOperationsBuilder(Car car)
         {
