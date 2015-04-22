@@ -1,5 +1,6 @@
 ﻿using System;
 using GarageDomain;
+using GarageDomain.CarOperations;
 using VotiroGarage;
 
 namespace GarageConsole
@@ -15,29 +16,21 @@ namespace GarageConsole
             Car car2 = new SimpleCar { Color = Color.White, FuelTank = 100, Name = "Porche" };
             Car car3 = new SimpleCar { Color = Color.Yellow, FuelTank = 50, Name = "BMW" };
 
-            garage.InitGarage();
-
 
             //using a garage builder (for a more manual control over the operations)
+            //with this design we wont need to touch exising code at all only create new operations that inherit from baseCarOperation
             //-----------------------------
-            var builder = garage.GetCarOperationsBuilder(car1);
-            builder.AddCarOperation(new PaintCarOperation(Color.Blue))
-                .AddCarOperation(new LowerCaseCarNameOperation());
+            var builder = garage.GetCarOperationsBuilder();
+            builder.AddCarOperation(new PaintCarOperation(car1, Color.Blue))
+                .AddCarOperation(new LowerCaseCarNameOperation(car1));
 
-            builder.SetCar(car2);
-            builder.AddCarOperation(new PaintCarOperation(Color.Yellow));
+            builder.AddCarOperation(new PaintCarOperation(car2, Color.Yellow));
 
-            builder.SetCar(car3);
-            builder.AddCarOperation(new LowerCaseCarNameOperation())
-                .AddCarOperation(new PaintCarOperation(Color.Blue))
-                .AddCarOperation(new FuelCarOperation(10));
+            builder.AddCarOperation(new LowerCaseCarNameOperation(car3))
+                .AddCarOperation(new PaintCarOperation(car3, Color.Blue))
+                .AddCarOperation(new FuelCarOperation(car3, 10));
 
             builder.Execute();
-
-            //using a more user friendly garage oprerations api
-            //-----------------------------
-
-
 
             Console.Read();
         }

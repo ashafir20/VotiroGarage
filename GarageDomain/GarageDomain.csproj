@@ -40,11 +40,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Abstract\Car.cs" />
+    <Compile Include="CarOperations\ConsoleLoggerOperationProxy.cs" />
+    <Compile Include="CarOperations\FuelCarOperation.cs" />
+    <Compile Include="CarOperations\LowerCaseCarNameOperation.cs" />
+    <Compile Include="CarOperations\PaintCarOperation.cs" />
     <Compile Include="Color.cs" />
     <Compile Include="Contracts\IGarageLog.cs" />
     <Compile Include="Garage.cs" />
     <Compile Include="GarageLogger.cs" />
-    <Compile Include="GarageOperation.cs" />
+    <Compile Include="CarOperations\CarOperationBase.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SimpleCar.cs" />
   </ItemGroup>

@@ -1,39 +1,29 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using System.Linq;
+using GarageDomain.CarOperations;
 using VotiroGarage;
 
 namespace GarageDomain
 {
     public class Garage
     {
-        private Collection<CarOperationBase> _carOperations;
-
-        public void InitGarage()
+        public GarageOperationBuilder GetCarOperationsBuilder()
         {
-            _carOperations = new Collection<CarOperationBase>();
-        }
-
-        public GarageOperationBuilder GetCarOperationsBuilder(Car car)
-        {
-            return new GarageOperationBuilder(car);
+            return new GarageOperationBuilder();
         }
 
         public class GarageOperationBuilder
         {
-            private Car _car;
             private readonly ICollection<CarOperationBase> _operations;
 
-            internal GarageOperationBuilder(Car car)
+            internal GarageOperationBuilder()
             {
-                _car = car;
                 _operations = new List<CarOperationBase>();
             }
 
             public GarageOperationBuilder AddCarOperation(CarOperationBase operation)
             {
-                operation.Car = _car;
                 _operations.Add(new ConsoleLoggerOperationProxy(operation));
                 return this;
             }
@@ -44,11 +34,6 @@ namespace GarageDomain
                 {
                     operation.RunOperation();
                 }
-            }
-
-            public void SetCar(Car car)
-            {
-                _car = car;
             }
         }
     }
