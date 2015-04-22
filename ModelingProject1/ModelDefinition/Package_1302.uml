@@ -1,0 +1,1152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="e2785979-9aeb-4780-be22-2ce755a20dff"
+  name="GarageDomain"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="eea6db45-b02e-4d58-96e3-4f6d58ac7e96"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DGarageDomain"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="20b608c3-6450-4048-b665-5692557a3b63"
+        LastKnownName="CarOperations"
+        LastKnownLocation="Package1_1302.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="5e5590ce-8ccd-4528-a28c-978171274127"
+        name="Car"
+        isAbstract="true"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="bc4e2d66-67b8-43a1-98e5-d20129b62074"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Faviv%2Fdocuments%2Fvisual studio 2013%2FProjects%2FVotiroGarage%2FGarageDomain%2Fbin%2FDebug%2FGarageDomain.dll&quot; Namespace%3DGarageDomain Type%3DCar"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="b23bfa6f-da5d-4f57-ab86-106ebaea26e9"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="71803f5e-8c23-4b5d-b8a5-51433dde29d9">
+                <propertyInstance
+                  Id="4b189276-76a4-40ee-bf64-f7245f170a4b"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="a8b440f2-efe7-45ab-8eaa-ba7537266a32">
+                <propertyInstance
+                  Id="85133208-01df-4cec-9165-bcc487fe2718"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="5652baa6-33fc-4633-906a-e0b81d9511ac">
+                <propertyInstance
+                  Id="f8053344-e7e0-406b-96e5-c6ecbd2f5402"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="4a4035d8-01b0-4609-b58d-5321c8c6f210">
+                <propertyInstance
+                  Id="d3724bc7-e6f9-4fd3-8460-58fd06505bab"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="3ae3a864-deaa-4623-a6ca-95f9e68fc33c">
+                <propertyInstance
+                  Id="be185596-2425-4328-9a96-133ceaa46f2c"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <targetEnds>
+          <association
+            Id="3e8eda92-bcba-4b41-b4f9-c1af64a33bcf"
+            isDerived="false"
+            sourceEndRoleName="Car"
+            targetEndRoleName="Color"
+            isLeaf="false"
+            isAbstract="false">
+            <enumerationMoniker
+              Id="481c027a-b126-47db-9855-803380629aec"
+              LastKnownName="Color"
+              LastKnownLocation="Package_1303.uml" />
+            <description>Property Color references type Color.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="240c7c9c-4c12-4e35-ae77-0762776f0d5d"
+                  name="Car"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="adb316c3-fb8b-4e96-a686-ee510f2620ec"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="fd001480-0430-4807-952a-ebfb9e76267a"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e6dcc02a-c01e-4603-9625-50483a1a936b"
+                  name="Color"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="2aeb7c97-7945-4f57-b854-21c87d170bab"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="ef9cd064-b3ef-4769-a499-814c5b07b7d9"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="0e8e20fd-bf69-45f7-97dd-a4fbc05435e6"
+            name="Name"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="f0849007-37a1-4ddb-b9db-80afda2ae61b"
+                handle="viewcode://./CodeSchema_Property?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Faviv%2Fdocuments%2Fvisual studio 2013%2FProjects%2FVotiroGarage%2FGarageDomain%2Fbin%2FDebug%2FGarageDomain.dll&quot; Namespace%3DGarageDomain Type%3DCar Member%3DName"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="91aed421-8dc1-40eb-ae0a-51d9bbb170a5"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3810c761-9bb0-4745-b976-d2cd410654b1">
+                    <propertyInstance
+                      Id="7cf695cb-1575-45a5-885f-cc258f998071"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d1fe68ee-404d-41e1-bef7-bae545c5a4c7">
+                    <propertyInstance
+                      Id="5b2b296f-d614-49b8-8f84-753b2c7e0dc0"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2b1f82f7-3b92-4491-97e2-e03530418385">
+                    <propertyInstance
+                      Id="0ec10e44-d1e2-46dd-b254-611228eebfa8"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9faeb52a-0c26-48d1-b387-bd942990d08c">
+                    <propertyInstance
+                      Id="f3ae1c6c-79cc-4b7a-adb4-be1ec3efe69e"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b8ff41f1-8efd-438d-9a4e-d736d1898fc7">
+                    <propertyInstance
+                      Id="472d6041-c184-45a6-96ef-271e900d9e2d"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="98d70f8d-4e1a-4fd9-a882-475d3e4f8f49">
+                    <propertyInstance
+                      Id="1fb96490-a283-4af2-8737-2f8761f5ee3c"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="dc959dbf-3887-4ba7-b9d4-b68364a2c3fd">
+                    <propertyInstance
+                      Id="75201d82-4a0e-4555-b5d5-a6524e702fbb"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="1655ad0c-33fd-408e-86c7-39455be3358e"
+            name="Color"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="7e13dacf-f303-4712-933a-89eb232fee58"
+                handle="viewcode://./CodeSchema_Property?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Faviv%2Fdocuments%2Fvisual studio 2013%2FProjects%2FVotiroGarage%2FGarageDomain%2Fbin%2FDebug%2FGarageDomain.dll&quot; Namespace%3DGarageDomain Type%3DCar Member%3DColor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="b8cc0d02-0bc2-4b49-b5a9-d9e02bf5abdb"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4b5e7330-fb56-47c9-8f22-baa77663a97f">
+                    <propertyInstance
+                      Id="3c707b2c-e663-4202-9e29-4b2bd0ed2bfe"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="acd5f7ec-55a5-4bb0-9038-3347c0836af8">
+                    <propertyInstance
+                      Id="7c355dd1-fa7e-4cf3-ab41-00efa18c7066"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e761d74c-e4cc-4ab6-bb80-3645407bcfe4">
+                    <propertyInstance
+                      Id="5cbeb6b8-1f6f-4bad-a67d-e01e0c2a1158"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ff132597-e83c-4caa-9aec-05b62cbf60b8">
+                    <propertyInstance
+                      Id="5174b57e-19eb-4139-91ca-6ba59d71e7bc"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ca865dd1-ec1d-41f8-850d-f12315e6086e">
+                    <propertyInstance
+                      Id="8ed9677a-538c-4bb5-a4d3-06f82afd3ab3"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6c5150af-338a-4b0e-95b8-7a9f23c924dd">
+                    <propertyInstance
+                      Id="44f15c6c-3107-40af-ba0c-56339a0e7f14"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8dc4bdfc-40ed-4150-8051-e0fa128fcadd">
+                    <propertyInstance
+                      Id="23e6df02-aac7-467e-9a28-aa8ed5ccdb5d"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <enumerationMoniker
+                Id="481c027a-b126-47db-9855-803380629aec"
+                LastKnownName="Color"
+                LastKnownLocation="Package_1303.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="45ee5d51-0ae2-401e-889f-adbb1ec94edf"
+            name="FuelTank"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="4cb609f3-ff1f-4698-ab6a-8d95964d686d"
+                handle="viewcode://./CodeSchema_Property?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Faviv%2Fdocuments%2Fvisual studio 2013%2FProjects%2FVotiroGarage%2FGarageDomain%2Fbin%2FDebug%2FGarageDomain.dll&quot; Namespace%3DGarageDomain Type%3DCar Member%3DFuelTank"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="51a1a0fc-a62b-4744-b221-675ebe88a61c"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="868caaa9-4dec-42ef-a6c0-f9916e12ea95">
+                    <propertyInstance
+                      Id="6274aeee-e954-4466-b22f-59fbb81879a0"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="57f0907e-8e2d-40d4-9a45-35f9e31faded">
+                    <propertyInstance
+                      Id="dab360ae-e990-4773-a44d-10300c4f8d88"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="335aabcd-e30f-4cb2-bed9-b5216c9e42fc">
+                    <propertyInstance
+                      Id="8fb643c3-9200-466a-a856-4b43a02fb9e3"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ee4e3c66-ec24-4324-8985-42ae416384a7">
+                    <propertyInstance
+                      Id="4b861680-c140-4dad-ab28-535b6fe30646"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3ca9d5ed-8560-4938-b01f-cd4e0d52fb82">
+                    <propertyInstance
+                      Id="05dc93cd-f3a0-49ee-bc85-bd5bd40c0e97"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8288705d-a9cf-4339-bb89-4026bba3a276">
+                    <propertyInstance
+                      Id="a7f8ab60-e906-46aa-97ae-10f1f9d5694a"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="430e10d1-cffa-46b6-a15c-6756692b4480">
+                    <propertyInstance
+                      Id="90c5d077-521f-4807-8879-ac638d4698ca"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="fd321525-703e-4af1-8c39-799625e67ac6"
+            name="Car"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="d695eb85-53dc-408f-a412-52405a5cde49"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Faviv%2Fdocuments%2Fvisual studio 2013%2FProjects%2FVotiroGarage%2FGarageDomain%2Fbin%2FDebug%2FGarageDomain.dll&quot; Namespace%3DGarageDomain Type%3DCar Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="91fe47f9-0cf3-4b6c-90cc-67b1ce30b6b9"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ae78ec86-a3f0-421a-84c3-f8cc79994488">
+                    <propertyInstance
+                      Id="eb05e812-4774-40a5-8c3e-b571ba6a5778"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="add28dfd-884b-4593-a79d-5f9894beccde">
+                    <propertyInstance
+                      Id="01edddec-48fa-4582-a00e-e19881238d5c"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="87ab0afb-7722-417c-ad72-d9d4663a6f7e">
+                    <propertyInstance
+                      Id="da8888b6-f261-43d2-9589-40054f85a43e"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="31de9209-2a31-4886-ac21-b2b83a301f60">
+                    <propertyInstance
+                      Id="c9dc9ec9-e2b4-4cbd-a71b-e65234705074"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c4c1e30a-ac7a-4385-8e61-96ec2fb24741">
+                    <propertyInstance
+                      Id="0fc2c37e-4068-4b93-bc98-50b1fdf1995f"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f9fa7e20-a437-41e8-a852-3718555df17b">
+                    <propertyInstance
+                      Id="69dcce2a-e391-4829-9a0b-918f9f2fbe78"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="173cc5ac-0554-4262-ac15-4a1bfea7410b"
+        name="GarageLogger"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="d8a7ecc7-b426-465a-9da5-fe588af02b1a"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Faviv%2Fdocuments%2Fvisual studio 2013%2FProjects%2FVotiroGarage%2FGarageDomain%2Fbin%2FDebug%2FGarageDomain.dll&quot; Namespace%3DGarageDomain Type%3DGarageLogger"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="5c0e7fce-b40d-4577-aac2-0d9da9cf20f1"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="945dd558-3969-40c0-acae-90922406a802">
+                <propertyInstance
+                  Id="10050e4d-eb60-49bd-a025-44bfd7dcb353"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="8d037a4a-9c2e-4475-87a8-88df91a0bbe5">
+                <propertyInstance
+                  Id="b78c0a6c-87a3-4541-a436-ed91fb9338d3"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="d6fe8a00-c7cb-4a31-9a03-df6275b01fd3">
+                <propertyInstance
+                  Id="33d87362-2da6-4e1c-98e1-3ba1775276b5"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="7e3bd858-4a5f-40ad-bfdc-88a0b23cc01b">
+                <propertyInstance
+                  Id="31262add-00e4-467c-99eb-b135b80efa9b"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="ea9b282d-3bda-4bf5-8500-92f92285ea32">
+                <propertyInstance
+                  Id="4c6d72ed-500d-435a-9e46-1cbb072e89b8"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <suppliersInternal>
+          <interfaceRealization
+            Id="13550b66-d3a7-498f-90cb-b33d0b912f94">
+            <interfaceMoniker
+              Id="420b9476-8f49-43b2-9b06-756a50bc84f5"
+              LastKnownName="IGarageLog"
+              LastKnownLocation="Package_1303.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="85593b80-c865-4daf-99a7-689c2ee2d16b"
+            name="Log"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="dff8042a-94cf-4fec-bd92-e26532e7aaa1"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Faviv%2Fdocuments%2Fvisual studio 2013%2FProjects%2FVotiroGarage%2FGarageDomain%2Fbin%2FDebug%2FGarageDomain.dll&quot; Namespace%3DGarageDomain Type%3DGarageLogger Member%3D(Name%3DLog OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="0e8b7a01-e2f5-42e3-b5da-7906f7495529"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ea120dd3-27ec-4b9d-a5b8-22ca181d931f">
+                    <propertyInstance
+                      Id="66452c16-2663-42ac-a450-733f74b50df6"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e5042039-8a36-4349-9327-989afb7c7c7c">
+                    <propertyInstance
+                      Id="d51732af-c5c6-4293-b83d-b898841c19eb"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3c7f681d-8c77-40cf-b3df-7d745f3e4104">
+                    <propertyInstance
+                      Id="8399676e-78bb-4112-9bc3-08fa805e2d7c"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="06dcf9a8-ed13-40d4-8003-3b38fc9cbadf">
+                    <propertyInstance
+                      Id="e8c7d592-b13f-4b54-9f0d-c362fcd7c128"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="78069ace-9325-44aa-950b-40f52bd6261d">
+                    <propertyInstance
+                      Id="df8afc25-148e-4c33-842f-ae20db22a920"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ad2a8250-d944-45a6-b027-03fd78ad9f01">
+                    <propertyInstance
+                      Id="c784c626-ea44-4cfd-b1be-d32117cdc203"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="1d0701ae-07c1-45da-a277-b3fd0fddca6c"
+                  name="message"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="cc16d593-e20f-4f5a-92cd-7b69cacbc62c"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Faviv%2Fdocuments%2Fvisual studio 2013%2FProjects%2FVotiroGarage%2FGarageDomain%2Fbin%2FDebug%2FGarageDomain.dll&quot; Namespace%3DGarageDomain Type%3DGarageLogger Member%3D(Name%3DLog OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)]) ParameterIdentifier%3Dmessage"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="e59766f0-519a-4114-b798-cc2228c20147"
+            name="GarageLogger"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="7310c9a6-d780-4484-9150-1ed6a58c2b2a"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Faviv%2Fdocuments%2Fvisual studio 2013%2FProjects%2FVotiroGarage%2FGarageDomain%2Fbin%2FDebug%2FGarageDomain.dll&quot; Namespace%3DGarageDomain Type%3DGarageLogger Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="a1115860-d02e-4e03-825d-1bb020f95d40"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2e3c04d3-2e1e-4de8-bfb4-8cd6466af14c">
+                    <propertyInstance
+                      Id="d58b4294-663b-47a7-8b3d-1365bfd882ff"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="02ebc60f-6d86-4da3-89c3-628978cb4896">
+                    <propertyInstance
+                      Id="9bc4c3a8-0c50-4712-9d77-1b9ccec169a3"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cda44055-43fe-4538-99e4-b3bfa40bdc95">
+                    <propertyInstance
+                      Id="86d61610-2f6d-4dba-967a-bc4987b725db"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="57b63b57-cf26-4d46-ac8d-9f17ed416207">
+                    <propertyInstance
+                      Id="aadb5471-feb0-432a-954c-ddc824301426"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b0062f15-80a6-4288-a9c5-cbdd77468e42">
+                    <propertyInstance
+                      Id="ae015992-7d3a-4d7f-b053-9dba9745a527"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1b55de15-13ec-4d4d-9147-04ef97d2c2ae">
+                    <propertyInstance
+                      Id="b23bc3a9-ba9c-492d-ae5d-05e22454919c"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="515d00c6-05f7-418d-97d6-a026d6e5b346"
+        name="SimpleCar"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="1cf3a3e1-355b-4433-9171-9b0867df6d6c"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Faviv%2Fdocuments%2Fvisual studio 2013%2FProjects%2FVotiroGarage%2FGarageDomain%2Fbin%2FDebug%2FGarageDomain.dll&quot; Namespace%3DGarageDomain Type%3DSimpleCar"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="2ca5581c-ab5e-4369-b88e-f4699eab7c78"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="ea57beb8-60ab-42ae-a0b6-0ed80d9f84b4">
+                <propertyInstance
+                  Id="c343cb84-16ad-466e-b5c9-b3caf01eafa5"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="41d598a3-2cf1-4e90-ab12-961510274b43">
+                <propertyInstance
+                  Id="e904fa4d-3868-4675-9e8a-53fe5e73f822"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="e4cc10e2-f334-4bcd-b10b-7a7dc056ec90">
+                <propertyInstance
+                  Id="f4d0d582-3028-4bc3-b903-194c9fc73c8a"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="1790f5c4-a928-45b8-a85f-27dd87fce7be">
+                <propertyInstance
+                  Id="b270df97-7915-4169-b438-6396045ff601"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="0db4a768-ef15-4f31-9ccf-3b9029058c19">
+                <propertyInstance
+                  Id="e8616c1e-b373-4e88-ac28-b614dd8c5475"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <generalsInternal>
+          <generalization
+            Id="04defece-798c-45ec-a3fd-e670771f03c6"
+            isSubstitutable="false">
+            <classMoniker
+              Id="5e5590ce-8ccd-4528-a28c-978171274127"
+              LastKnownName="Car"
+              LastKnownLocation="Package_1302.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="f5928bb4-73cc-4d90-82df-d25641055978"
+            name="ToString"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="231ae794-990c-4c8a-854c-9c19ce4e2a93"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Faviv%2Fdocuments%2Fvisual studio 2013%2FProjects%2FVotiroGarage%2FGarageDomain%2Fbin%2FDebug%2FGarageDomain.dll&quot; Namespace%3DGarageDomain Type%3DSimpleCar Member%3DToString"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="367dea6e-5681-403b-a285-75fda12c69b4"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b6e5d09e-d098-4d40-a17c-4656750593de">
+                    <propertyInstance
+                      Id="1c2714a1-4ee7-4016-85d6-14259363d664"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="025140ed-2633-4424-8962-fc633e71af1c">
+                    <propertyInstance
+                      Id="97499258-61ce-4336-8bfa-9fd001db496c"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="73992a6f-c7ac-43dd-9374-8985be13c442">
+                    <propertyInstance
+                      Id="926770d2-0f93-4b01-ab68-21c640eda1f1"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6c76985b-8807-4a6e-940c-fe825534a87f">
+                    <propertyInstance
+                      Id="532a0505-8505-4ff7-af37-ce2b3249c666"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="46038a79-b4dd-4d5c-8c24-c0c73cf276ab">
+                    <propertyInstance
+                      Id="2cb1f6d3-300b-4644-8533-d33f113c6094"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="119b92d8-d89e-4137-8869-20da06c63766">
+                    <propertyInstance
+                      Id="187d5e6e-95e6-4929-bf75-61203ce5c7b4"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="a0925e9d-b7d6-4fd3-86b4-a8654cb38671"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="4d85baa3-b004-48df-95c2-7eabc19fc585"
+            name="SimpleCar"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="f11061ee-06af-4f91-848a-ccc8f73e771e"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Faviv%2Fdocuments%2Fvisual studio 2013%2FProjects%2FVotiroGarage%2FGarageDomain%2Fbin%2FDebug%2FGarageDomain.dll&quot; Namespace%3DGarageDomain Type%3DSimpleCar Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="9d42f0b6-594b-4879-80dd-b8a51b415fb7"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="028eef56-7140-4f9e-baaf-5f38599c9385">
+                    <propertyInstance
+                      Id="b6a0e50b-1b0e-4730-988c-cd04d40491da"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="87084206-d020-427e-99b0-11a8bf62c96c">
+                    <propertyInstance
+                      Id="ea67d92a-3e3a-4970-aa73-5d6e93908174"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="80d63cb5-1417-4c45-9207-ee26d1029069">
+                    <propertyInstance
+                      Id="b9853ed9-f91d-444a-85a4-895c79835a90"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0ee6756d-ebdf-4650-ac6f-ee2a87290ace">
+                    <propertyInstance
+                      Id="b09e80ce-ce3a-4a88-83d2-caa7b696a36a"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="12696522-19ec-49bf-86cd-8773b1265592">
+                    <propertyInstance
+                      Id="dce25656-a5f0-4d8e-be73-2d1529384815"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5e05fe38-70be-4cfe-877e-3153f7db0bd6">
+                    <propertyInstance
+                      Id="284bd821-a037-4241-890d-13e3fb82201a"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="145f9b40-145a-4a25-a600-70fea25c40f9"
+        name="Garage"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="17e5fab4-070c-4143-a48a-3f41255103a1"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Faviv%2Fdocuments%2Fvisual studio 2013%2FProjects%2FVotiroGarage%2FGarageDomain%2Fbin%2FDebug%2FGarageDomain.dll&quot; Namespace%3DGarageDomain Type%3DGarage"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="4dfa7a3f-dfb0-44ee-b6ea-4a3f61bdaa12"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="7a94e1ad-4dd1-4fa1-b0ff-6d0168b97c0d">
+                <propertyInstance
+                  Id="36a21790-db48-4ee7-8bbf-995e9cd74849"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="f0cc53c8-9868-4b1a-b15d-910a85e3cdb2">
+                <propertyInstance
+                  Id="1c0dc43d-12ad-493a-b906-5792f4c300f8"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="6ee0036d-88f3-4a31-8f14-e776c489191d">
+                <propertyInstance
+                  Id="c1c0a16c-d5a5-4a50-8de8-60c3bb2a2295"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="2bf75cdb-7339-4e03-a134-f001328c3e3c">
+                <propertyInstance
+                  Id="401281d6-c87e-4f21-881e-45b178988562"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="e11c7d60-a828-4b61-9aee-a6633ac71702">
+                <propertyInstance
+                  Id="ed467c07-fcce-4e53-a1fa-4cc0569a8da8"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="80ebb3a8-77b5-4552-82f8-1f148b2c1fed"
+            name="GetCarOperationsBuilder"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="b1587c81-c4a8-402c-ad4d-2d9e6e2c46d2"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Faviv%2Fdocuments%2Fvisual studio 2013%2FProjects%2FVotiroGarage%2FGarageDomain%2Fbin%2FDebug%2FGarageDomain.dll&quot; Namespace%3DGarageDomain Type%3DGarage Member%3DGetCarOperationsBuilder"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="0c53882c-f401-49f9-be49-5a53e7a3244f"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="658789da-2744-45b2-8cd5-d16d8fd83dd8">
+                    <propertyInstance
+                      Id="7e899bae-b5da-4dbf-9dd2-46d17d397414"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6a1981c8-0db3-421a-9dbc-9fe2a158603e">
+                    <propertyInstance
+                      Id="33a97608-da89-49f6-b93d-630e39ea94b7"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="285f31a2-6b7b-4290-805b-02838bfbcada">
+                    <propertyInstance
+                      Id="30525ff1-1941-489d-9ed6-78f3c32cd5c3"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cb184e6e-6412-489e-b31a-f133f3204e85">
+                    <propertyInstance
+                      Id="a4b92c65-c03f-488c-b33f-8de390e89cf8"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="22273bb8-5022-43c5-8d16-a8afdd820a02">
+                    <propertyInstance
+                      Id="7bf83b85-810d-41fe-beae-309256cd0ce7"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f2c66c10-c841-44bb-a32d-f541ed09205d">
+                    <propertyInstance
+                      Id="7192d7c8-b0e8-4ef3-a2b0-101cd5aad110"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="a847aac7-4cf2-49a1-95fa-5f5339553882"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="885fb11f-10e0-4441-b0b4-674c7b234ed5"
+                      LastKnownName="GarageOperationBuilder"
+                      LastKnownLocation="Package_1302.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="5ed43f62-9ec7-496b-880c-96d45f051ea3"
+            name="Garage"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="f250ecfe-7923-486e-a16d-d43e61fa25d8"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Faviv%2Fdocuments%2Fvisual studio 2013%2FProjects%2FVotiroGarage%2FGarageDomain%2Fbin%2FDebug%2FGarageDomain.dll&quot; Namespace%3DGarageDomain Type%3DGarage Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="7e9a80b5-1f3d-463f-abec-7e8b4b0579d2"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="17469632-96c8-451c-9a75-96900bc9bd35">
+                    <propertyInstance
+                      Id="a4f8d94a-be3d-4a38-9044-b90502c6a872"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="933b145b-0720-45fb-a6a5-45700ebdcabe">
+                    <propertyInstance
+                      Id="058224ff-fe13-4025-b560-74e4e659bd8f"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="372fe73e-1bbc-42ad-ba7b-69412ea3bd05">
+                    <propertyInstance
+                      Id="a4a79b3c-8da6-4509-a035-3a0e177e2177"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d1e5ab87-7ede-4d25-8106-216334af7e67">
+                    <propertyInstance
+                      Id="ce96197f-6ff6-49ca-a590-14a0f9c78d32"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e6e01cb9-4a39-4aef-b071-6f9ea49bc4d8">
+                    <propertyInstance
+                      Id="93a990a0-7a03-4817-b4ee-a30ca8fdaeef"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9df86bdd-2531-4fa6-aa90-8677965d0538">
+                    <propertyInstance
+                      Id="bbdaf97c-0369-41c9-acad-78453652f31d"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="885fb11f-10e0-4441-b0b4-674c7b234ed5"
+        name="GarageOperationBuilder"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="39f59b06-a490-4338-85f6-90b906e023b2"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Faviv%2Fdocuments%2Fvisual studio 2013%2FProjects%2FVotiroGarage%2FGarageDomain%2Fbin%2FDebug%2FGarageDomain.dll&quot; Namespace%3DGarageDomain Type%3D(Name%3DGarageOperationBuilder ParentType%3DGarage)"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="e811c97a-abfe-4d42-892a-8cbe7488952b"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="72ef2589-5ea5-4fb5-a131-a7896fd392a5">
+                <propertyInstance
+                  Id="23bfe0be-c9be-4dd8-be55-d639688a4969"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="a659306f-c2b6-4d4c-9c3d-60a23e3c2902">
+                <propertyInstance
+                  Id="df9cb17e-47af-46b0-ab38-f509d406fb71"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="afab5dfa-098c-4567-8f90-ebb757800a98">
+                <propertyInstance
+                  Id="8188143d-412b-4cd5-9e56-4ebb67ee1d6d"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="8dcb9985-dde4-42a6-aedf-70e41bb1665f">
+                <propertyInstance
+                  Id="a9cbf01f-d559-4db9-9801-8d3561ee135e"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="93d6bed2-d361-4a90-86d9-d029eca932a2">
+                <propertyInstance
+                  Id="08b858e4-a35e-4b0e-964d-ad2b7a38c37c"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

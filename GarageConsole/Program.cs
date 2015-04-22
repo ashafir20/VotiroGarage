@@ -17,7 +17,7 @@ namespace GarageConsole
             Car car3 = new SimpleCar { Color = Color.Yellow, FuelTank = 50, Name = "BMW" };
 
 
-            //using a garage builder (for a more manual control over the operations)
+            //using a garage builder (for a more manual control over the operations we want to run)
             //with this design we wont need to touch exising code at all only create new operations that inherit from baseCarOperation
             //-----------------------------
             var builder = garage.GetCarOperationsBuilder();
